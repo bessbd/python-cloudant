@@ -122,7 +122,7 @@ connection pooling and thread safety.
 
 Connection pools can be managed by using the ``requests`` library's
 `HTTPAdapter <https://github.com/kennethreitz/requests/blob/master/requests/adapters.py#L78>`_
-when constructing a ``Cloudant`` or ``ClouchDB`` client instance.
+when constructing a ``Cloudant`` or ``CouchDB`` client instance.
 The default number set by the ``urllib3`` library for cached connection pools is 10.
 Use the ``HTTPAdapter`` argument ``pool_connections`` to set the number of
 urllib3 connection pools to cache, and the ``pool_maxsize`` argument to set the
